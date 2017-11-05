@@ -46,20 +46,39 @@
     
 
      
+    echo '<table border="1">';
+    echo '<tr>
+              <th>id</th>
+              <th>email</th>
+              <th>fname</th>
+              <th>lname</th>
+              <th>phone</th>
+              <th>birthday</th>
+              <th>gender</th>
+              <th>password</th>
+         </tr>';
 
 
 
 
+    foreach ($result as $key) {
 
+    echo '<tr>';
+       
+        echo '<td>'.$key['id'].'</td>';
+        echo '<td>'.$key['email'].'</td>';
+        echo '<td>'.$key['fname'].'</td>';
+        echo '<td>'.$key['lname'].'</td>';
+        echo '<td>'.$key['phone'].'</td>';
+        echo '<td>'.$key['birthday'].'</td>';
+        echo '<td>'.$key['gender'].'</td>';
+        echo '<td>'.$key['password'].'</td>';
+        
+    echo '</tr>';
 
+    }
 
-
-
-
-
-
-
-
+    echo '</table>';
 
 
 
