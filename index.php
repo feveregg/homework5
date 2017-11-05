@@ -45,7 +45,8 @@
     echo ' results found! <br>';
     
 
-     
+    
+    //Table output
     echo '<table border="1">';
     echo '<tr>
               <th>id</th>
