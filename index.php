@@ -27,6 +27,28 @@
 
 
 
+    try {
+  
+         $stmt = $dbConn->prepare("SELECT * FROM accounts where id<6");
+	     $stmt->execute();   
+         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+         $result = $stmt->fetchAll();
+
+    } catch (PDOException $e) {
+
+        echo $sql . "<br>" . $e->getMessage();
+ 
+    }
+
+   
+    $number = print_r(count($result));
+    echo ' results found! <br>';
+    
+
+     
+
+
+
 
 
 
